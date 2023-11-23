@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONYO</title>
+    <title>ONYO | Riwayat Rental</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
 </head>
 
 <body>
@@ -34,10 +35,22 @@
                         <a class="nav-link" href="kontak.html">Kontak</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a href="#" class="btn-masuk fw-semibold text-decoration-none">Masuk</a>
-                    <a href="#" class="btn-daftar fw-semibold text-decoration-none text-white">Daftar</a>
-                </div>
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            id="navbarDropdown" aria-expanded="false">
+                            <img src="/assets/images/ic_acc.png" alt="Profil" class="me-1">Adrian Adhari
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="edit-profil.html"
+                                    style="background-color: transparent;">Edit Profil</a></li>
+                            <li><a class="dropdown-item" href="riwayat-rental.html"
+                                    style="background-color: transparent;">Riwayat Rental</a></li>
+                            <li><a class="dropdown-item" href="masuk.html"
+                                    style="background-color: transparent;">Keluar</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -64,7 +77,7 @@
                                 <th>Biaya Driver</th>
                                 <th>Total Biaya</th>
                                 <th>Status</th>
-                                <th>Aksi</th>
+                                <th>Penilaian</th>
                             </tr>
                         </thead>
                         <tbody class="text-center">
@@ -78,10 +91,22 @@
                                 <td>Rp 200.000</td>
                                 <td>Rp 900.000</td>
                                 <td>Selesai</td>
-                                <td><a href="beri-review.html">Beri Review</a></td>
+                                <td><img src="assets/images/star.png" alt=""></td>
                             </tr>
                             <tr>
                                 <td>2</td>
+                                <td>BK0003</td>
+                                <td>Hyundai Palisade</td>
+                                <td>10/6/2024</td>
+                                <td>21/6/2024</td>
+                                <td>Rp 900.000</td>
+                                <td>Rp 200.000</td>
+                                <td>Rp 1.100.000</td>
+                                <td>Selesai</td>
+                                <td><a href="beri-review.html">Beri Review</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
                                 <td>BK0005</td>
                                 <td>Porsche 992 GT3 RS</td>
                                 <td>5/7/2028</td>
@@ -89,8 +114,8 @@
                                 <td>Rp 5.000.000</td>
                                 <td>-</td>
                                 <td>Rp 5.000.000</td>
-                                <td>Selesai</td>
-                                <td><a href="beri-review.html">Beri Review</a></td>
+                                <td>Pending</td>
+                                <td><a class="text-secondary text-decoration-none">-</a></td>
                             </tr>
                         </tbody>
                     </table>

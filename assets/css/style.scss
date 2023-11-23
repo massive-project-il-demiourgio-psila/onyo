@@ -59,7 +59,7 @@ nav {
         height: 47px;
         border-radius: 25px;
         font-size: 18px;
-        margin-left: 30px;
+        margin-left: 15px;
         padding: 9px 26px;
         &:hover {
             background-color: #292b8f;
@@ -87,7 +87,7 @@ header {
         height: 642px;
         position: absolute;
         right: 0px;
-        bottom: 78px;
+        bottom: 100px;
         z-index: 5;
     }
 }
@@ -222,25 +222,6 @@ header {
         background-color: #F0F0F0;
         padding: 5px;
     }
-    .btn-lanjutkan {
-        background-color: #3B3C98;
-        padding: 10px 26px;
-        color: #FFF;
-        font-size: 18px;
-        font-weight: bold;
-        border-radius: 10px;
-        box-sizing: border-box;
-    }
-}
-
-.upload-pembayaran {
-    color: #2C2E33;
-    margin-top: 85px;
-    .card {
-        padding: 30px;
-        border: 1px solid #D8D8D8;
-        background-color: #fff;
-    }
     .btn-kirim {
         background-color: #3B3C98;
         padding: 10px 26px;
@@ -248,7 +229,6 @@ header {
         font-size: 20px;
         font-weight: bold;
         border-radius: 10px;
-        width: 180px;
     }
 }
 
@@ -347,7 +327,7 @@ header {
 footer {
     min-height: 250px;
     background-color: #FFF;
-    padding-top: 30px;
+    padding: 30 0px;
     .navbar-nav {
         .nav-link {
             font-size: 16px;

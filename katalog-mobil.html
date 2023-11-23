@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONYO</title>
+    <title>ONYO | Katalog Mobil</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
 </head>
 
 <body>
@@ -34,10 +35,22 @@
                         <a class="nav-link" href="kontak.html">Kontak</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a href="#" class="btn-masuk fw-semibold text-decoration-none">Masuk</a>
-                    <a href="#" class="btn-daftar fw-semibold text-decoration-none text-white">Daftar</a>
-                </div>
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            id="navbarDropdown" aria-expanded="false">
+                            <img src="/assets/images/ic_acc.png" alt="Profil" class="me-1">Adrian Adhari
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="edit-profil.html"
+                                    style="background-color: transparent;">Edit Profil</a></li>
+                            <li><a class="dropdown-item" href="riwayat-rental.html"
+                                    style="background-color: transparent;">Riwayat Rental</a></li>
+                            <li><a class="dropdown-item" href="masuk.html"
+                                    style="background-color: transparent;">Keluar</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
