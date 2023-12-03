@@ -8,6 +8,15 @@ import profil4 from '../assets/images/profil4.png';
 import profil5 from '../assets/images/profil3.png';
 import profil6 from '../assets/images/profil2.png';
 import profil7 from '../assets/images/profil2.png';
+import mobil1 from "../assets/images/mobil/innova-reborn.png";
+import mobil2 from "../assets/images/mobil/brio.png";
+import mobil3 from "../assets/images/mobil/fortuner.png";
+import mobil4 from "../assets/images/mobil/expander.png";
+import mobil5 from "../assets/images/mobil/grand-innova.png";
+import mobil6 from "../assets/images/mobil/ayla.png";
+import mobil7 from "../assets/images/mobil/ertiga.png";
+import mobil8 from "../assets/images/mobil/pajero-sport.png";
+import mobil9 from "../assets/images/mobil/agya.png";
 
 export const navLinks = [
     {
@@ -140,4 +149,151 @@ export const testimoni = [
         star5: "fa-solid fa-star-half-stroke",
         isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
     }
+]
+
+export const mobil = [
+    {
+        id: 1,
+        nama: "Toyota Innova Reborn",
+        images: mobil1,
+        harga: "Rp. 450.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star",
+        testimoni: 136,
+        kursi: 7,
+        ac: "AC",
+        transmisi: "Manual",
+        bahanbakar: "Diesel"
+    },
+    {
+        id: 2,
+        nama: "Honda Brio",
+        images: mobil2,
+        harga: "Rp. 250.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 61,
+        kursi: 6,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Bensin"
+    },
+    {
+        id: 3,
+        nama: "Toyota Fortuner",
+        images: mobil3,
+        harga: "Rp. 600.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-regular fa-star",
+        testimoni: 83,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Diesel"
+    },
+    {
+        id: 5,
+        nama: "Toyota Grand Innova",
+        images: mobil5,
+        harga: "Rp. 250.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 39,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Diesel"
+    },
+    {
+        id: 4,
+        nama: "Mitsubishi Expander",
+        images: mobil4,
+        harga: "Rp. 250.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 41,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Bensin"
+    },
+    {
+        id: 7,
+        nama: "Suzuki Ertiga",
+        images: mobil7,
+        harga: "Rp. 300.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 22,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Bensin"
+    },
+    {
+        id: 8,
+        nama: "Mitsubishi Pajero Sport",
+        images: mobil8,
+        harga: "Rp. 600.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 64,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Diesel"
+    },
+    {
+        id: 9,
+        nama: "Toyota Agya",
+        images: mobil9,
+        harga: "Rp. 250.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 71,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Diesel"
+    },
+    {
+        id: 6,
+        nama: "Daihatsu Ayla",
+        images: mobil6,
+        harga: "Rp. 250.000 / hari",
+        star1: "fa-solid fa-star",
+        star2: "fa-solid fa-star",
+        star3: "fa-solid fa-star",
+        star4: "fa-solid fa-star",
+        star5: "fa-solid fa-star-half-stroke",
+        testimoni: 42,
+        kursi: 8,
+        ac: "AC",
+        transmisi: "Matic",
+        bahanbakar: "Bensin"
+    },
 ]

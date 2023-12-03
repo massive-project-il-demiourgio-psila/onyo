@@ -428,6 +428,28 @@ footer a {
   animation: pulse;
   animation-duration: 0.4s;
 }
+.katalog-mobil .mobil {
+  border-radius: 10px;
+  min-height: 400px;
+  background-color: #FFF;
+  border: none;
+  transition: 0.5s;
+}
+.katalog-mobil .mobil:hover {
+  transform: scale(1.05, 1.05);
+}
+.katalog-mobil .mobil .rating i {
+  color: gold;
+  margin-bottom: 0;
+}
+.katalog-mobil .mobil .rating .testimoni {
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: var(--third-color);
+}
+.katalog-mobil .mobil .spek p {
+  color: var(--third-color);
+}
 
 .ketentuan {
   background-color: var(--primary-color);
