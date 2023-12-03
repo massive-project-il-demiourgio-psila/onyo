@@ -32,9 +32,7 @@
   position: fixed;
   width: 100%;
   z-index: 999;
-  animation-name: fadeInDown;
-  animation-duration: 0.6s;
-  transition: 0.4s ease;
+  transition: 0.3s ease;
 }
 .navbar.color-active {
   background-color: #FFF;
@@ -44,7 +42,6 @@
   text-decoration: none;
   font-weight: 600;
   color: var(--color-text);
-  transition: all 0.1s ease-in;
 }
 .navbar .navbar-nav a.active {
   color: var(--secondary-color);
@@ -121,6 +118,11 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--color-text);
+}
+@media screen and (max-width: 768px) {
+  footer .info, footer .menu, footer .alamat {
+    margin-bottom: 30px;
+  }
 }
 
 .auth-page {
@@ -404,13 +406,114 @@ footer a {
 }
 
 .katalog-mobil {
+  padding-top: 150px;
   background-color: var(--primary-color);
+}
+.katalog-mobil .filter {
+  padding: 35px;
+  background-color: #FFF;
+  border: none;
+  border-radius: 15px;
+}
+.katalog-mobil .filter .merek button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.katalog-mobil .filter .merek .merek-mobil {
+  width: 50px;
+  margin: 4px;
+}
+.katalog-mobil .filter .merek .merek-mobil:hover {
+  animation: pulse;
+  animation-duration: 0.4s;
 }
 
 .ketentuan {
   background-color: var(--primary-color);
+  padding-top: 150px;
+}
+@media screen and (max-width: 400px) {
+  .ketentuan h5 {
+    font-size: 16px;
+  }
+  .ketentuan li {
+    font-size: 14px;
+  }
+  .ketentuan .benefit {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .kontak {
+  padding-top: 200px;
   background-color: var(--primary-color);
+}
+.kontak img {
+  width: 100%;
+}
+.kontak .form-kontak .form-control::-moz-placeholder {
+  color: var(--third-color);
+}
+.kontak .form-kontak .form-control::placeholder {
+  color: var(--third-color);
+}
+.kontak .form-kontak .btn-kirim {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #FFF;
+  font-weight: 600;
+  padding: 10px;
+}
+.kontak .form-kontak .btn-kirim:hover {
+  background-color: #24267c;
+  color: #FFF;
+  transition: 0.3s;
+}
+.kontak .form-kontak .btn-wa {
+  border-radius: 10px;
+  border: none;
+  background-color: #47C756;
+  color: #FFF;
+  font-weight: 600;
+  padding: 10px;
+}
+.kontak .form-kontak .btn-wa:hover {
+  background-color: #2dad3c;
+  color: #FFF;
+  transition: 0.3s;
+}
+@media screen and (max-width: 992px) {
+  .kontak {
+    padding-top: 150px;
+  }
+  .kontak img {
+    width: 600px;
+  }
+  .kontak .title {
+    margin-top: 50px;
+  }
+  .kontak form {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .kontak img {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .kontak img {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .kontak {
+    padding-top: 100px;
+  }
+  .kontak img {
+    width: 300px;
+  }
 }/*# sourceMappingURL=main.css.map */
