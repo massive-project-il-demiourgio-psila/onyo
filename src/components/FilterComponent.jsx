@@ -7,7 +7,7 @@ import ic_honda from "../assets/images/ic_honda.png";
 export default function FilterComponent() {
   return (
     <div className="filter shadow-sm">
-      <div className="tipe-mobil mb-3">
+      <div className="tipe-mobil mb-lg-3 mb-0">
         <h5 className="fw-semibold">Tipe Mobil</h5>
         <Form>
           <div className="mb-2">

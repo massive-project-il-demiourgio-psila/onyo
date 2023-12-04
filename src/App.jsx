@@ -5,6 +5,9 @@ import Ketentuan from "./pages/Ketentuan";
 import Kontak from "./pages/Kontak";
 import Masuk from "./pages/Masuk";
 import Daftar from "./pages/Daftar";
+import DataDiri from "./pages/DataDiri";
+import Pembayaran from "./pages/Pembayaran";
+import Sukses from "./pages/Sukses";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Route path="/kontak" Component={Kontak} />
         <Route path="/masuk" Component={Masuk} />
         <Route path="/daftar" Component={Daftar} />
+        <Route path="/data-diri" Component={DataDiri} />
+        <Route path="/pembayaran" Component={Pembayaran} />
+        <Route path="/sukses" Component={Sukses} />
       </Routes>
     </div>
   );

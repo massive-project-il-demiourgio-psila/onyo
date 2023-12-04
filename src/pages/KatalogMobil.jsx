@@ -42,14 +42,14 @@ export default function KatalogMobil() {
                 </Form>
               </div>
               <Row className="mt-4">
-                <Col lg={6}>
+                <Col lg={6} className="mb-3">
                   <h5 className="fw-semibold">Tanggal Rental</h5>
                   <div className="d-flex">
                     <Form.Control type="date" className="me-2"></Form.Control>
                     <Form.Control type="time" className="ms-2"></Form.Control>
                   </div>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="mb-3">
                   <h5 className="fw-semibold">Tanggal Pengembalian</h5>
                   <div className="d-flex">
                     <Form.Control type="date" className="me-2"></Form.Control>
@@ -60,7 +60,14 @@ export default function KatalogMobil() {
               <Row className="my-4">
                 {mobil.map((data) => {
                   return (
-                    <Col lg={4} key={data.id}>
+                    <Col
+                      xl={4}
+                      lg={6}
+                      md={6}
+                      key={data.id}
+                      data-aos="zoom-in-up"
+                      data-aos-duration="800"
+                    >
                       <Link to="/data-diri" className="text-decoration-none">
                         <div className="shadow-sm border-0 p-3 mobil mb-4">
                           <h5 className="fw-bold">{data.nama}</h5>
@@ -68,6 +75,7 @@ export default function KatalogMobil() {
                             src={data.images}
                             alt={data.nama}
                             height={"100%"}
+                            className="gambar-mobil"
                           />
                           <p className="mt-2 mb-0 fw-semibold">{data.harga}</p>
                           <div className="rating d-flex align-items-center">
@@ -81,19 +89,19 @@ export default function KatalogMobil() {
                             </p>
                           </div>
                           <Row className="mt-3 text-center spek">
-                            <Col lg={3}>
+                            <Col>
                               <img src={ic_seat} alt={ic_seat} />
                               <p className="mt-2 mb-0">{data.kursi} Kursi</p>
                             </Col>
-                            <Col lg={3}>
+                            <Col>
                               <img src={ic_ac} alt={ic_ac} />
                               <p className="mt-2 mb-0">{data.ac}</p>
                             </Col>
-                            <Col lg={3}>
+                            <Col>
                               <img src={ic_matic} alt={ic_matic} />
                               <p className="mt-2 mb-0">{data.transmisi}</p>
                             </Col>
-                            <Col lg={3}>
+                            <Col>
                               <img src={ic_gas} alt={ic_gas} />
                               <p className="mt-2 mb-0">{data.bahanbakar}</p>
                             </Col>
