@@ -23,9 +23,9 @@ export default function FooterComponent() {
           <Col md={2} className="d-flex flex-column menu" style={{ gap: 10 }}>
             <h5 className="fw-bold">Menu</h5>
             <Link to="/">Beranda</Link>
-            <Link to="katalog-mobil">Katalog Mobil</Link>
-            <Link to="ketentuan">Ketentuan</Link>
-            <Link to="kontak">Kontak</Link>
+            <Link to="/katalog-mobil">Katalog Mobil</Link>
+            <Link to="/ketentuan">Ketentuan</Link>
+            <Link to="/kontak">Kontak</Link>
           </Col>
           <Col md={4} className="alamat">
             <h5 className="fw-bold">Kontak</h5>
