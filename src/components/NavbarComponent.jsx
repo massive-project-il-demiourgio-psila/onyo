@@ -1,11 +1,14 @@
 import { useState, useEffect } from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { navLinks } from "../data";
+import { useAuth } from "./AuthContext";
 
 export default function NavbarComponent() {
   let navigate = useNavigate();
+
+  const { isLoggedIn, logout } = useAuth();
 
   const [changeColor, setChangeColor] = useState(false);
   const changeBackgroundColor = () => {
@@ -46,12 +49,37 @@ export default function NavbarComponent() {
             })}
           </Nav>
           <div className="text-center auth">
-            <button className="btn-masuk" onClick={() => navigate("/masuk")}>
-              Masuk
-            </button>
-            <button className="btn-daftar" onClick={() => navigate("/daftar")}>
-              Daftar
-            </button>
+            {isLoggedIn ? (
+              <>
+                <NavDropdown title="Adrian Adhari" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/edit-profil">
+                    Edit Profil
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="/riwayat-rental">
+                    Riwayat Rental
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item onClick={() => logout()}>
+                    Keluar
+                  </NavDropdown.Item>
+                </NavDropdown>
+              </>
+            ) : (
+              <>
+                <button
+                  className="btn-masuk"
+                  onClick={() => navigate("/masuk")}
+                >
+                  Masuk
+                </button>
+                <button
+                  className="btn-daftar"
+                  onClick={() => navigate("/daftar")}
+                >
+                  Daftar
+                </button>
+              </>
+            )}
           </div>
         </Navbar.Collapse>
       </Container>

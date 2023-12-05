@@ -3,10 +3,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import profil1 from "../assets/images/pelanggan1.png";
 import { testimoni } from "../data";
+import { useState } from "react";
 
 export default function TestimoniComponent() {
+  const [selectedTestimoni, setSelectedTestimoni] = useState(testimoni[0]);
+  const handleTestimoniClick = (testimoni) => {
+    setSelectedTestimoni(testimoni);
+    setSelectedTestimoniId(testimoni.id);
+  };
+  const [selectedTestimoniId, setSelectedTestimoniId] = useState(
+    testimoni[0].id
+  );
+
   return (
     <div className="testimoni">
       <Container>
@@ -19,25 +28,21 @@ export default function TestimoniComponent() {
           </Col>
         </Row>
         <Row className="text-center pb-5">
-          <Col data-aos="fade-up" data-aos-duration="1700">
-            <img src={profil1} className="mb-3" />
-            <h4 className="fw-semibold">Muhammad Firly</h4>
-            <div className="star mb-5">
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-              <i className="fa-solid fa-star"></i>
-            </div>
-            <p>
-              “Saya sangat puas dengan layanan website rental mobil ini. Proses
-              pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya
-              sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan
-              customer service juga ramah dan responsif. Saya merekomendasikan
-              website ini bagi siapa saja yang ingin menyewa mobil dengan harga
-              terjangkau dan kualitas terjamin.”
-            </p>
-          </Col>
+          {selectedTestimoni ? (
+            <Col data-aos="fade-up" data-aos-duration="1700">
+              <img src={selectedTestimoni.image} className="mb-3" />
+              {console.log(selectedTestimoni)}
+              <h4 className="fw-semibold">{selectedTestimoni.nama}</h4>
+              <div className="star mb-5">
+                <i className={selectedTestimoni.star1}></i>
+                <i className={selectedTestimoni.star2}></i>
+                <i className={selectedTestimoni.star3}></i>
+                <i className={selectedTestimoni.star4}></i>
+                <i className={selectedTestimoni.star5}></i>
+              </div>
+              <p>{selectedTestimoni.isi}</p>
+            </Col>
+          ) : null}
         </Row>
         <Row>
           <Swiper
@@ -69,8 +74,14 @@ export default function TestimoniComponent() {
           >
             {testimoni.map((data) => {
               return (
-                <SwiperSlide key={data.id} className="shadow-sm rounded-3">
-                  <img src={data.image} />
+                <SwiperSlide
+                  key={data.id}
+                  className={`rounded-3 ${
+                    selectedTestimoniId === data.id ? "active" : ""
+                  }`}
+                  onClick={() => handleTestimoniClick(data)}
+                >
+                  <img src={data.image} width={"53px"} />
                   <div className="d-flex flex-column text-start ps-3">
                     <p className="nama mb-0">{data.nama}</p>
                     <p className="profesi mb-0">{data.profesi}</p>

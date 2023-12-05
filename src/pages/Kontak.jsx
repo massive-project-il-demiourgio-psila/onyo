@@ -44,13 +44,15 @@ export default function Kontak() {
                       required
                     />
                   </Form.Group>
-                  <button className="btn-kirim w-100">Kirim</button>
-                  <p className="text-center my-3">atau</p>
-                  <button className="btn-wa w-100">
-                    <i className="fa-brands fa-whatsapp me-2 text-white"></i>
-                    Hubungi Melalui WhatsApp
+                  <button className="btn-kirim w-100" type="submit">
+                    Kirim
                   </button>
                 </Form>
+                <p className="text-center my-3">atau</p>
+                <button className="btn-wa w-100">
+                  <i className="fa-brands fa-whatsapp me-2 text-white"></i>
+                  Hubungi Melalui WhatsApp
+                </button>
               </div>
             </Col>
           </Row>

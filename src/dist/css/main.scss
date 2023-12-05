@@ -85,6 +85,10 @@
             }
         }
     }
+    .dropdown-toggle.nav-link {
+        color: var(--color-text);
+        font-weight: bold;
+    }
     @media screen and (max-width: 992px) {
         background-color: #FFF;
         border-bottom: 2px solid #3b3d988a;
@@ -241,8 +245,11 @@ header {
     margin-top: -36px;
     padding-bottom: 100px;
     background-color: var(--primary-color);
-    p {
-        color: var(--third-color);
+    .card {
+        p {
+            color: var(--third-color);
+        }
+        border: none;
     }
 }
 .alur {
@@ -265,12 +272,12 @@ header {
             margin-left: 80px;
             margin-top: 230px;
         }
-        .pembayaran {
+        .pembayarans {
             margin-top: -20px;
             padding-left: 30px;
         }
         @media screen and (max-width: 1500px) {
-            .pembayaran {
+            .pembayarans {
                 padding: 0;
                 margin: 0;
                 margin-top: -20px;
@@ -293,7 +300,7 @@ header {
                 margin: 0;
                 margin-top: 130px;
             }
-            .pembayaran {
+            .pembayarans {
                 padding: 0;
                 margin: 0;
                 margin-top: 180px;
@@ -316,7 +323,7 @@ header {
                 margin: 0;
                 margin-top: 180px;
             }
-            .pembayaran {
+            .pembayarans {
                 padding: 0;
                 margin: 0;
                 margin-top: 220px;
@@ -338,7 +345,7 @@ header {
                 margin: 0;
                 margin-top: 140px;
             }
-            .pembayaran {
+            .pembayarans {
                 padding: 0;
                 margin: 0;
                 margin-top: 150px;
@@ -358,7 +365,7 @@ header {
                 padding: 0;
                 margin: 0;
             }
-            .pembayaran {
+            .pembayarans {
                 padding: 0;
                 margin: 0;
             }
@@ -394,11 +401,12 @@ header {
         padding: 15px 25px;
         font-size: 18px;
         background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(138,138,138,0.25);
       
         /* Center slide text vertically */
         display: flex;
         align-items: center;
-        cursor: grab;
+        cursor: pointer;
         &:active {
             cursor: grabbing;  
         }
@@ -409,6 +417,20 @@ header {
         }
         .profesi {
             color: var(--third-color);
+        }
+        &:hover {
+            box-shadow: 0 5px 10px 0 rgba(59,60,152,0.5);
+            background-color: var(--secondary-color);
+            p {
+                color: #FFF;
+            }
+        }
+        &.active {
+            box-shadow: 0 5px 10px 0 rgba(59,60,152,0.5);
+            background-color: var(--secondary-color);
+            p {
+                color: #FFF;
+            }
         }
     }
 }
@@ -675,3 +697,49 @@ header {
     }
 }
 // Sukses
+
+
+// Riwayat Rental
+.riwayat-rental {
+    padding-top: 150px;
+    background-color: var(--primary-color);
+    min-height: 70vh;
+}
+// Riwayat Rental
+
+
+// Beri Review
+.beri-review {
+    padding-top: 200px;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    .gradient {
+        background-image: linear-gradient(to right, rgba(59,60,152, 100%), rgb(157, 163, 216));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .star {
+        .fa-solid {
+            color: gold;
+        }
+    }
+    .form-control {
+        &::placeholder {
+            color: var(--third-color);
+        }
+    }
+    .btn-kirim {
+        border-radius: 10px;
+        border: none;
+        background-color: var(--secondary-color);
+        color: #FFF;
+        font-weight: 600;
+        padding: 10px;
+        &:hover {
+            background-color: #24267c;
+            color: #FFF;
+            transition: 0.3s;
+        }
+    }
+}
+// Beri Review

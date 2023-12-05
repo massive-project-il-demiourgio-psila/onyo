@@ -8,6 +8,8 @@ import Daftar from "./pages/Daftar";
 import DataDiri from "./pages/DataDiri";
 import Pembayaran from "./pages/Pembayaran";
 import Sukses from "./pages/Sukses";
+import RiwayatRental from "./pages/RiwayatRental";
+import BeriReview from "./pages/BeriReview";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/data-diri" Component={DataDiri} />
         <Route path="/pembayaran" Component={Pembayaran} />
         <Route path="/sukses" Component={Sukses} />
+        <Route path="/riwayat-rental" Component={RiwayatRental} />
+        <Route path="/beri-review" Component={BeriReview} />
       </Routes>
     </div>
   );

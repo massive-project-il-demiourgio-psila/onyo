@@ -83,6 +83,10 @@
   color: #FFF;
   transition: 0.3s;
 }
+.navbar .dropdown-toggle.nav-link {
+  color: var(--color-text);
+  font-weight: bold;
+}
 @media screen and (max-width: 992px) {
   .navbar {
     background-color: #FFF;
@@ -233,7 +237,10 @@ footer a {
   padding-bottom: 100px;
   background-color: var(--primary-color);
 }
-.beranda .kenapa p {
+.beranda .kenapa .card {
+  border: none;
+}
+.beranda .kenapa .card p {
   color: var(--third-color);
 }
 .beranda .alur {
@@ -258,12 +265,12 @@ footer a {
   margin-left: 80px;
   margin-top: 230px;
 }
-.beranda .alur .content .pembayaran {
+.beranda .alur .content .pembayarans {
   margin-top: -20px;
   padding-left: 30px;
 }
 @media screen and (max-width: 1500px) {
-  .beranda .alur .content .pembayaran {
+  .beranda .alur .content .pembayarans {
     padding: 0;
     margin: 0;
     margin-top: -20px;
@@ -286,7 +293,7 @@ footer a {
     margin: 0;
     margin-top: 130px;
   }
-  .beranda .alur .content .pembayaran {
+  .beranda .alur .content .pembayarans {
     padding: 0;
     margin: 0;
     margin-top: 180px;
@@ -309,7 +316,7 @@ footer a {
     margin: 0;
     margin-top: 180px;
   }
-  .beranda .alur .content .pembayaran {
+  .beranda .alur .content .pembayarans {
     padding: 0;
     margin: 0;
     margin-top: 220px;
@@ -331,7 +338,7 @@ footer a {
     margin: 0;
     margin-top: 140px;
   }
-  .beranda .alur .content .pembayaran {
+  .beranda .alur .content .pembayarans {
     padding: 0;
     margin: 0;
     margin-top: 150px;
@@ -353,7 +360,7 @@ footer a {
     padding: 0;
     margin: 0;
   }
-  .beranda .alur .content .pembayaran {
+  .beranda .alur .content .pembayarans {
     padding: 0;
     margin: 0;
   }
@@ -388,10 +395,11 @@ footer a {
   padding: 15px 25px;
   font-size: 18px;
   background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(138, 138, 138, 0.25);
   /* Center slide text vertically */
   display: flex;
   align-items: center;
-  cursor: grab;
+  cursor: pointer;
 }
 .beranda .testimoni .swiper-slide:active {
   cursor: grabbing;
@@ -403,6 +411,20 @@ footer a {
 }
 .beranda .testimoni .swiper-slide .profesi {
   color: var(--third-color);
+}
+.beranda .testimoni .swiper-slide:hover {
+  box-shadow: 0 5px 10px 0 rgba(59, 60, 152, 0.5);
+  background-color: var(--secondary-color);
+}
+.beranda .testimoni .swiper-slide:hover p {
+  color: #FFF;
+}
+.beranda .testimoni .swiper-slide.active {
+  box-shadow: 0 5px 10px 0 rgba(59, 60, 152, 0.5);
+  background-color: var(--secondary-color);
+}
+.beranda .testimoni .swiper-slide.active p {
+  color: #FFF;
 }
 
 .katalog-mobil {
@@ -635,6 +657,45 @@ footer a {
   border: none;
 }
 .sukses .btn-detailtransaksi:hover {
+  background-color: #24267c;
+  color: #FFF;
+  transition: 0.3s;
+}
+
+.riwayat-rental {
+  padding-top: 150px;
+  background-color: var(--primary-color);
+  min-height: 70vh;
+}
+
+.beri-review {
+  padding-top: 200px;
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+.beri-review .gradient {
+  background-image: linear-gradient(to right, rgb(59, 60, 152), rgb(157, 163, 216));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.beri-review .star .fa-solid {
+  color: gold;
+}
+.beri-review .form-control::-moz-placeholder {
+  color: var(--third-color);
+}
+.beri-review .form-control::placeholder {
+  color: var(--third-color);
+}
+.beri-review .btn-kirim {
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: #FFF;
+  font-weight: 600;
+  padding: 10px;
+}
+.beri-review .btn-kirim:hover {
   background-color: #24267c;
   color: #FFF;
   transition: 0.3s;

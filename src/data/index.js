@@ -7,7 +7,7 @@ import profil3 from '../assets/images/profil3.png';
 import profil4 from '../assets/images/profil4.png';
 import profil5 from '../assets/images/profil3.png';
 import profil6 from '../assets/images/profil2.png';
-import profil7 from '../assets/images/profil2.png';
+import profil7 from '../assets/images/profil1.png';
 import mobil1 from "../assets/images/mobil/innova-reborn.png";
 import mobil2 from "../assets/images/mobil/brio.png";
 import mobil3 from "../assets/images/mobil/fortuner.png";
@@ -77,77 +77,79 @@ export const testimoni = [
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-solid fa-star-half-stroke",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin."`
     },
     {
         id: 2,
         image: profil2,
-        nama: "Agus Pranowo",
+        nama: "Khindir Karawita",
         profesi: "Arsitek",
         star1: "fa-solid fa-star",
         star2: "fa-solid fa-star",
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-regular fa-star",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Website ini menjadi solusi sempurna bagi saya yang butuh mobil untuk perjalanan bisnis. Prosesnya efisien, pelayanan pelanggan yang ramah, dan mobil yang nyaman. Akan saya gunakan lagi di lain waktu."`
     },
     {
         id: 3,
         image: profil3,
-        nama: "Abu Jahal",
+        nama: "Khalid Kashmiri",
         profesi: "Mahasiswa",
         star1: "fa-solid fa-star",
         star2: "fa-solid fa-star",
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-solid fa-star-half-stroke",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Pertama kali menggunakan layanan rental mobil online, dan saya sangat terkesan. Semua informasi tentang mobil jelas tertera, dan pilihan mobilnya sangat beragam. Pengalaman menyewa yang menyenangkan."`
     },
     {
         id: 4,
         image: profil4,
-        nama: "Rizki Febriansyah",
+        nama: "Muhammad Sumbul",
         profesi: "Programmer",
         star1: "fa-solid fa-star",
         star2: "fa-solid fa-star",
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-solid fa-star",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Pelayanan customer service yang sangat membantu! Mereka dengan sabar menjawab pertanyaan saya dan membantu saya memilih mobil yang sesuai dengan kebutuhan keluarga saya. Saya merasa sangat dihargai sebagai pelanggan."`
     },
     {
         id: 5,
         image: profil5,
-        nama: "Orang ke 5",
+        nama: "Firdaus",
         profesi: "Pengusaha",
         star1: "fa-solid fa-star",
         star2: "fa-solid fa-star",
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-solid fa-star-half-stroke",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Saya telah mencoba beberapa layanan rental mobil sebelumnya, namun yang ini menjadi favorit saya. Harga yang wajar, prosesnya cepat, dan mobil yang bersih serta terawat dengan baik. Sangat direkomendasikan untuk semua orang yang mencari layanan rental mobil yang handal."`
     },
     {
         id: 6,
         image: profil6,
-        nama: "Orang ke 6",
+        nama: "Osama Bin Laden",
+        profesi: "Pilot",
         star1: "fa-solid fa-star",
         star2: "fa-solid fa-star",
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-solid fa-star-half-stroke",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Pengalaman menyewa mobil di website ini sangat menyenangkan. Prosesnya cepat dan mudah, mobilnya juga sesuai dengan yang diharapkan. Saya akan kembali menggunakan layanan ini di masa mendatang."`
     },
     {
         id: 7,
         image: profil7,
-        nama: "Orang ke 7",
+        nama: "Rizky Febriansyah",
+        profesi: "Penyanyi",
         star1: "fa-solid fa-star",
         star2: "fa-solid fa-star",
         star3: "fa-solid fa-star",
         star4: "fa-solid fa-star",
         star5: "fa-solid fa-star-half-stroke",
-        isi: `Saya sangat puas dengan layanan website rental mobil ini. Proses pemesanan dan pembayaran sangat mudah dan cepat. Mobil yang saya sewa juga bersih, nyaman, dan sesuai dengan deskripsi. Pelayanan customer service juga ramah dan responsif. Saya merekomendasikan website ini bagi siapa saja yang ingin menyewa mobil dengan harga terjangkau dan kualitas terjamin.`
+        isi: `"Website ini memberikan pilihan mobil yang beragam. Pelayanan pelanggan sangat membantu dan ramah. Saya puas dengan kualitas mobil yang saya sewa dan akan merekomendasikan kepada teman-teman saya."`
     }
 ]
 
@@ -297,3 +299,42 @@ export const mobil = [
         bahanbakar: "Bensin"
     },
 ]
+
+export const riwayatRental = [
+    {
+        id: 1,
+        kodeSewa: "BK0001",
+        namaMobil: "Toyota Innova Reborn",
+        tanggalRental: "25/12/2023",
+        tanggalPengembalian: "27/12/2023",
+        biayaMobil: "Rp 700.000",
+        biayaDriver: "Rp 200.000",
+        totalBiaya: "Rp 900.000",
+        status: "Selesai",
+        penilaian: "5"
+    },
+    {
+        id: 2,
+        kodeSewa: "BK0007",
+        namaMobil: "Hyundai Palisade",
+        tanggalRental: "10/6/2024",
+        tanggalPengembalian: "21/6/2024",
+        biayaMobil: "Rp 900.000",
+        biayaDriver: "Rp 200.000",
+        totalBiaya: "Rp 1.100.000",
+        status: "Selesai",
+        penilaian: "beri-review"
+    },
+    {
+        id: 3,
+        kodeSewa: "BK0012",
+        namaMobil: "Porsche 992 GT3 RS",
+        tanggalRental: "5/7/2028",
+        tanggalPengembalian: "10/7/2028",
+        biayaMobil: "Rp 5.000.000",
+        biayaDriver: "-",
+        totalBiaya: "Rp 5.000.000",
+        status: "Pending",
+        penilaian: "-"
+    },
+];

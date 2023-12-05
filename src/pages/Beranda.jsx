@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 import NavbarComponent from "../components/NavbarComponent";
 import FooterComponent from "../components/FooterComponent";
 import { Container, Row, Col } from "react-bootstrap";
@@ -7,12 +9,14 @@ import KenapaComponent from "../components/KenapaComponent";
 import AlurComponent from "../components/AlurComponent";
 import TestimoniComponent from "../components/TestimoniComponent";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Beranda() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   let navigate = useNavigate();
   return (
     <div className="beranda">
-      <NavbarComponent />
+      <NavbarComponent isLoggedIn={isLoggedIn} />
       <header className="w-100 d-flex align-items-center">
         <Container>
           <Row>

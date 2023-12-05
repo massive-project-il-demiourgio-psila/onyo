@@ -26,10 +26,10 @@ export default function KenapaComponent() {
                 md={6}
                 key={data.id}
                 data-aos="fade-up"
-                data-aos-duration="1700"
+                data-aos-duration="1900"
               >
                 <div
-                  className="card p-4 shadow-sm border-0 mb-3"
+                  className="card p-4 shadow-sm mb-3 rounded-5"
                   style={{ height: "350px" }}
                 >
                   <img src={data.image} width="60px" />

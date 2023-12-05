@@ -48,7 +48,7 @@ export default function AlurComponent() {
                 <h4 className="fw-bold mt-5">Pilih Mobil</h4>
                 <p>Pilih mobil yang sesuai dengan selera dan kebutuhan</p>
               </Col>
-              <Col md={2} sm={6} className="text-center pembayaran">
+              <Col md={2} sm={6} className="text-center pembayarans">
                 <img src={icPayment} width={"50px"} />
                 <h4 className="fw-bold mt-5">Pembayaran</h4>
                 <p>Selesaikan pembayaran untuk membooking mobil yang dipilih</p>

@@ -9,13 +9,16 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import "animate.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { AuthProvider } from "./components/AuthContext.jsx";
 AOS.init();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop />
-      <App />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <App />
+      </BrowserRouter>
+    </AuthProvider>
   </React.StrictMode>
 );
