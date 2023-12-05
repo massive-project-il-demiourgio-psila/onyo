@@ -83,6 +83,10 @@
   color: #FFF;
   transition: 0.3s;
 }
+.navbar .auth .dropdown-item a {
+  text-decoration: none;
+  color: var(--color-text);
+}
 .navbar .dropdown-toggle.nav-link {
   color: var(--color-text);
   font-weight: bold;
@@ -699,4 +703,35 @@ footer a {
   background-color: #24267c;
   color: #FFF;
   transition: 0.3s;
+}
+
+.edit-profile {
+  padding-top: 160px;
+  background-color: var(--primary-color);
+  min-height: 70vh;
+}
+.edit-profile .card {
+  border: 0;
+  background-color: #FFF;
+}
+.edit-profile .card .form-label {
+  font-weight: 600;
+}
+.edit-profile .card .form-control {
+  background-color: #FFF;
+  color: var(--third-color);
+}
+.edit-profile .card .form-control::-moz-placeholder {
+  color: var(--third-color);
+}
+.edit-profile .card .form-control::placeholder {
+  color: var(--third-color);
+}
+.edit-profile .card .btn-simpan {
+  background-color: var(--secondary-color);
+  border: 0;
+  padding: 10px 25px;
+  color: #FFF;
+  border-radius: 10px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

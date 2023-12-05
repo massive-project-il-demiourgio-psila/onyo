@@ -10,6 +10,7 @@ import Pembayaran from "./pages/Pembayaran";
 import Sukses from "./pages/Sukses";
 import RiwayatRental from "./pages/RiwayatRental";
 import BeriReview from "./pages/BeriReview";
+import EditProfile from "./pages/EditProfile";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/sukses" Component={Sukses} />
         <Route path="/riwayat-rental" Component={RiwayatRental} />
         <Route path="/beri-review" Component={BeriReview} />
+        <Route path="/edit-profil" Component={EditProfile} />
       </Routes>
     </div>
   );

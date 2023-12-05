@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import { navLinks } from "../data";
 import { useAuth } from "./AuthContext";
+import { Link } from "react-router-dom";
 
 export default function NavbarComponent() {
   let navigate = useNavigate();
@@ -52,11 +53,11 @@ export default function NavbarComponent() {
             {isLoggedIn ? (
               <>
                 <NavDropdown title="Adrian Adhari" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="/edit-profil">
-                    Edit Profil
+                  <NavDropdown.Item>
+                    <Link to={"/edit-profil"}>Edit Profil</Link>
                   </NavDropdown.Item>
-                  <NavDropdown.Item href="/riwayat-rental">
-                    Riwayat Rental
+                  <NavDropdown.Item>
+                    <Link to={"/riwayat-rental"}>Riwayat Rental</Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item onClick={() => logout()}>
