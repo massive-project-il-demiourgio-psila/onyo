@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import AuthCard from "../components/AuthCardComponent";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useAuth } from "../components/AuthContext";
 import { useDispatch } from "react-redux";
 import { setCredentials } from "../slices/auth.slice";
 import { useLoginMutation } from "../services/auth";

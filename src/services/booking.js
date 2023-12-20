@@ -6,19 +6,26 @@ const booking = baseApi.injectEndpoints({
             query: (args) => ({
                 url: '/bookings',
                 method: 'POST',
-                body: {
-                    
-                }
+                body: args
             }),
         }),
         addPayment: builder.mutation({
-            query: (args) => ({
-                url: `/bookings/:bookingId/invoice`,
-                method: 'POST',
-                body: {
+            query: (args) => {
 
+                const { bookingId, formData } = args
+
+                return {
+                    url: `/bookings/${bookingId}/invoice`,
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'multipart/form-data;'
+                    },
+                    formData: true,
+                    body: {
+                        formData
+                    }
                 }
-            }),
+            },
         }),
         getAllBookings: builder.query({
             query: () => ({
