@@ -6,6 +6,8 @@ import DetailPesanan from "../components/DetailPesanan";
 
 export default function DataDiri() {
   let navigate = useNavigate();
+  
+
   return (
     <>
       <NavbarAlternate />

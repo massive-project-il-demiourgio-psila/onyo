@@ -6,15 +6,21 @@ const slice = createSlice({
     reducers: {
         setCredentials: (
             state,
-            { payload: { accessToken } }
+            { payload: { data } }
         ) => {
-            // state.user = user
-            state.token = accessToken
+            state.user = data.user
+            state.token = data.token
+        },
+        clearCredentials: (
+            state,
+        ) => {
+            state.user = null
+            state.token = null
         },
     },
 })
 
-export const { setCredentials } = slice.actions
+export const { setCredentials, clearCredentials } = slice.actions
 
 export default slice.reducer
 

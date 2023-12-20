@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
-import { createContext, useContext, useState } from "react";
+import { createContext, useMemo, useState } from "react";
+import { useSelector } from 'react-redux'
+import { selectCurrentUser } from "../slices/auth.slice.js";
 
 const AuthContext = createContext();
 
@@ -24,5 +26,7 @@ export const AuthProvider = ({ children }) => {
 };
 
 export const useAuth = () => {
-  return useContext(AuthContext);
+  const user = useSelector(selectCurrentUser);
+
+  return useMemo(() => ({ user }), [user]);
 };
