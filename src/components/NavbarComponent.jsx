@@ -5,11 +5,14 @@ import Logo from "../assets/images/logo.png";
 import { navLinks } from "../data";
 import { useAuth } from "./AuthContext";
 import { Link } from "react-router-dom";
+import { clearCredentials } from "../slices/auth.slice";
+import { useDispatch } from "react-redux";
 
 export default function NavbarComponent() {
   let navigate = useNavigate();
+  let dispatch = useDispatch();
 
-  const { isLoggedIn, logout } = useAuth();
+  const auth = useAuth();
 
   const [changeColor, setChangeColor] = useState(false);
   const changeBackgroundColor = () => {
@@ -50,7 +53,7 @@ export default function NavbarComponent() {
             })}
           </Nav>
           <div className="text-center auth">
-            {isLoggedIn ? (
+            {auth.user ? (
               <>
                 <NavDropdown title="Adrian Adhari" id="basic-nav-dropdown">
                   <NavDropdown.Item>
@@ -60,7 +63,7 @@ export default function NavbarComponent() {
                     <Link to={"/riwayat-rental"}>Riwayat Rental</Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item onClick={() => logout()}>
+                  <NavDropdown.Item onClick={() => dispatch(clearCredentials())}>
                     Keluar
                   </NavDropdown.Item>
                 </NavDropdown>

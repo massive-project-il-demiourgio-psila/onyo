@@ -3,27 +3,39 @@ import { Link } from "react-router-dom";
 import AuthCard from "../components/AuthCardComponent";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { useAuth } from "../components/AuthContext";
+import { useDispatch } from "react-redux";
+import { setCredentials } from "../slices/auth.slice";
+import { useLoginMutation } from "../services/auth";
 
 export default function Masuk() {
   let navigate = useNavigate();
+  let dispatch = useDispatch();
 
-  const { login } = useAuth();
+  // const { login } = useAuth();
+  const [login, { isLoading }] = useLoginMutation();
 
   const [loginData, setLoginData] = useState({ email: "", password: "" });
 
-  const handleLogin = () => {
-    const dummyUserData = { email: "user@gmail.com", password: "12345678" };
+  const handleLogin = async () => {
+    const user = await login({
+      email: loginData.email,
+      password: loginData.password,
+    });
 
-    if (
-      loginData.email === dummyUserData.email &&
-      loginData.password === dummyUserData.password
-    ) {
-      login();
-      navigate("/");
-    } else {
-      return <p>salah</p>;
-    }
+    dispatch(setCredentials(user));
+    navigate("/");
+
+    // const dummyUserData = { email: "user@gmail.com", password: "12345678" };
+
+    // if (
+    //   loginData.email === dummyUserData.email &&
+    //   loginData.password === dummyUserData.password
+    // ) {
+    //   login();
+    //   navigate("/");
+    // } else {
+    //   return <p>salah</p>;
+    // }
   };
   return (
     <div className="auth-page">
@@ -80,6 +92,7 @@ export default function Masuk() {
                     <Button
                       style={{ backgroundColor: "#3B3C98", color: "white" }}
                       onClick={handleLogin}
+                      disabled={isLoading}
                     >
                       Masuk
                     </Button>
